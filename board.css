@@ -20,12 +20,6 @@
   z-index: -1;
   backdrop-filter: blur(6px);
 }
-.board-container .board-close {
-  position: absolute;
-  top: 6px;
-  right: 6px;
-  cursor: pointer;
-}
 .board-container .board-main {
   position: relative;
   z-index: 9999;
@@ -33,7 +27,23 @@
   height: 400px;
   margin: auto;
 }
-.board-container .board-main img {
+.board-container .board-main .board-close {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  cursor: pointer;
+}
+.board-container .board-main .board-tip {
+  display: inline-block;
+  margin-top: 6px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+  text-align: center;
+  color: #1a1a1a;
+}
+.board-container .board-main .board-img {
   width: 100%;
   height: 100%;
   border-radius: 8px;

@@ -10,7 +10,7 @@ export interface IBoardOptions {
   /**
    * board图标切换的间隔，仅imgUrl为string[]时有效
    * */
-  swipeTimeInterval: string;
+  swipeTimeInterval: number;
   /**
    * board风格
    * */
@@ -20,11 +20,27 @@ export interface IBoardOptions {
    * */
   onlyOnce: boolean;
   /**
+   * board是否只弹一次,是否弹出过了
+   * */
+  onlyOnceShowed: boolean;
+  /**
    * board再次弹出的间隔
    * */
-  popTimeInterval: string;
+  popTimeInterval: number;
   /**
    * board是否可关闭
    * */
   closeAble: boolean;
+  /**
+   * board是否会自动关闭
+   * */
+  autoClose: boolean;
+  /**
+   * 多久后board自动关闭
+   * */
+  autoCloseInterval: number;
+  /**
+   * board状态码
+   * */
+  statusCode: 0 | 1 | 2 | 3 | 4;
 }
